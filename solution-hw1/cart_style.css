@@ -1,0 +1,41 @@
+.cart_title{
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+
+.cartItem{
+    background: white;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:20px;
+    width:40%;
+}
+
+.cartImage{
+    max-width:30%;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.remove{
+    font-size:15px;
+    font-weight:bold;
+    margin-bottom: 15px;
+}
+
+.cartText{
+    font-size: 20px;
+}
+
+.price{
+    margin-top:10px;
+    font-size:22px;
+}
+
+.confirm{
+    width: 150px;
+    height:40px;
+    border:1px  solid #000;
+}

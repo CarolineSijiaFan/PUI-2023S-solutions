@@ -1,0 +1,55 @@
+body{
+    font-size: 25px;
+}
+
+.main_part{
+    text-align: center;
+}
+
+.logo{
+    width: 23%;
+    margin-left:50px;
+    margin-top:30px;
+}
+
+hr {
+    border-bottom: 5px solid;
+    margin-bottom:20px;
+  }
+
+.guide{
+    margin-bottom:20px;
+}
+
+.title{
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.gallery-main{
+    display: flex;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product{
+    background: white;
+    text-align: left;
+    margin-bottom:20px;
+    width:40%
+}
+
+.gallery_image{
+    margin-top:20px;
+    max-width:80%;
+    border: 5px solid black;
+    margin-left:10%;
+}
+
+.gallery_text{
+    margin-left:10%;
+    font-size: 30px;
+}
+
+
