@@ -17,39 +17,44 @@ hr {
     margin-bottom:20px;
   }
 
+.guidePart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .guide{
-    margin-bottom:20px;
+    margin-bottom:20px; 
 }
 
 .title{
     font-size: 35px;
     margin-top: 50px;
+    margin-bottom:100px;
 }
 
 .gallery-main{
     display: flex;
-    background: white;
     flex-direction: column;
     align-items: center;
 }
 
-.product{
-    background: white;
-    text-align: left;
-    margin-bottom:20px;
-    width:40%
-}
-
 .gallery_image{
-    margin-top:20px;
-    max-width:80%;
-    border: 5px solid black;
-    margin-left:10%;
+    max-width:99%;
+    border: 3px solid black;
 }
 
 .gallery_text{
-    margin-left:10%;
+    text-align:left;
     font-size: 30px;
 }
 
+a:hover{
+    background:yellow;
+}
 
+a.product{
+    margin-bottom:20px;
+    width: 40%;
+    margin-bottom: 30px;
+}

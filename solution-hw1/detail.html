@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <meta charset="UTF-8">
 
 <head>
     <title>Details</title>
-    <link rel="stylesheet" href="gallery_style.css">
-    <link rel="stylesheet" href="detail_style.css">
+    <link rel="stylesheet" href="css/gallery_style.css">
+    <link rel="stylesheet" href="css/detail_style.css">
 </head>
 
 <body>
@@ -18,12 +19,14 @@
 
     <div class = "main_part">
     
-        <a href="gallery.html">
-            <div class = "guide">PRODUCTS</div>
-        </a>
-        <a href="cart.html">
-            <div class = "guide">CART</div>
-        </a>
+        <div class="guidePart">
+            <a href="gallery.html">
+                <div class = "guide">PRODUCTS</div>
+            </a>
+            <a href="cart.html">
+                <div class = "guide">CART</div>
+            </a>
+        </div>
         
         <div class = "detailTitle"> Orignial Cinnamon Roll </div>
 
@@ -64,7 +67,7 @@
 
             <div class="confirmBox">
                 <div id="box1"> $2.49 </div>
-                <div id="box2"> Add to Cart</div>
+                <a class="box2" href="cart.html"> Add to Cart</a>
             </div>
         </div>
 
