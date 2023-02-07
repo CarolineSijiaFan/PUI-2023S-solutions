@@ -13,7 +13,7 @@
 }
 
 .cartImage{
-    max-width:15%;
+    max-width:90%;
     text-align: center;
     border: 3px solid black;
 }
@@ -21,8 +21,8 @@
 .remove{
     font-size:15px;
     font-weight:bold;
-    margin-bottom: 15px;
     margin-top:1%;
+    margin-bottom:20px;
 }
 
 .cartText{
@@ -33,12 +33,14 @@
 .price{
     margin-top:10px;
     font-size:22px;
+    text-align: right;
 }
 
 a.confirm{
     width: 150px;
     height:40px;
-    border:1px  solid #000;
+    border:3px  solid #000;
+    text-align:center;
 }
 
 #title_cart{
@@ -54,7 +56,6 @@ a.confirm{
 
 #leftMain{
     width:28%;
-    background:rgb(255, 222, 222);
     flex-shrink:0;
 }
 
@@ -66,11 +67,52 @@ a.confirm{
 .row{
     display:flex;
     flex-direction: row;
+    align-items:center;
 }
 
 .sampleElement{
     display:flex;
     flex-direction: column;
-    background:yellow;
     flex-grow:0;
+}
+
+#imageColumn{
+    width:15%;
+}
+
+#describeText{
+    flex-grow:1;
+    margin-left: 3%;
+}
+
+#priceText{
+    width:25%;
+    margin-right:12.5%;
+}
+
+#priceRow{
+    margin-left:20%;
+    margin-right:12.5%;
+}
+
+#cartEnd{
+    font-size:24px;
+    margin-bottom:25px;
+}
+
+#cartEndPrice{
+    font-size:24px;
+    margin-bottom:25px;
+    text-align:right;
+}
+
+#checkOUT{
+    justify-content:flex-end;
+    margin-right:12.5%;
+}
+
+.cartHR{
+    border-bottom: 2px solid;
+    margin-bottom:30px;
+    margin-left: 0px;
 }
