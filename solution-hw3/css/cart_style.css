@@ -1,0 +1,118 @@
+.cart_title{
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+
+.cartItem{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:20px;
+    width:40%;
+}
+
+.cartImage{
+    max-width:90%;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.remove{
+    font-size:15px;
+    font-weight:bold;
+    margin-top:1%;
+    margin-bottom:20px;
+}
+
+.cartText{
+    font-size: 20px;
+    text-align:left;
+}
+
+.price{
+    margin-top:10px;
+    font-size:22px;
+    text-align: right;
+}
+
+a.confirm{
+    width: 150px;
+    height:40px;
+    border:3px  solid #000;
+    text-align:center;
+}
+
+#title_cart{
+    font-size: 30px;
+    margin-left:5%;
+    margin-top: 10px;
+}
+
+.cartMain{
+    display:flex;
+    flex-direction: row;
+}
+
+#leftMain{
+    width:28%;
+    flex-shrink:0;
+}
+
+.rightMain{
+    flex-direction: column;
+    margin-right:5%;
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.sampleElement{
+    display:flex;
+    flex-direction: column;
+    flex-grow:0;
+}
+
+#imageColumn{
+    width:15%;
+}
+
+#describeText{
+    flex-grow:1;
+    margin-left: 3%;
+}
+
+#priceText{
+    width:25%;
+    margin-right:12.5%;
+}
+
+#priceRow{
+    margin-left:20%;
+    margin-right:12.5%;
+}
+
+#cartEnd{
+    font-size:24px;
+    margin-bottom:25px;
+}
+
+#cartEndPrice{
+    font-size:24px;
+    margin-bottom:25px;
+    text-align:right;
+}
+
+#checkOUT{
+    justify-content:flex-end;
+    margin-right:12.5%;
+}
+
+.cartHR{
+    border-bottom: 2px solid;
+    margin-bottom:30px;
+    margin-left: 0px;
+}
