@@ -48,11 +48,8 @@
             <div class="detailBox">
                 <label>Glazing:</label>
                 <div>
-                    <select class="menu" id="glazing">
-                        <option value=0> Keep original</option>
-                        <option value=0> Sugar milk</option>
-                        <option value=0.5> Vanilla milk</option>
-                        <option value=1.5> Double chocolate</option>
+                    <select class="menu" id="glazing" onchange="glazingChange(this)">
+                        
                     </select>
                 </div>
             </div>
@@ -60,11 +57,7 @@
             <div class="detailBox">
                 <label>Pack Size:</label>
                 <div>
-                    <select class="menu" id="size">
-                        <option value=1> 1</option>
-                        <option value=3> 3</option>
-                        <option value=5> 6</option>
-                        <option value=10> 12</option>
+                    <select class="menu" id="size" onchange="sizeChange(this)">
                     </select>
                 </div>
             </div>
