@@ -62,6 +62,7 @@ a.confirm{
 .rightMain{
     flex-direction: column;
     margin-right:5%;
+    width: 100%;
 }
 
 .row{

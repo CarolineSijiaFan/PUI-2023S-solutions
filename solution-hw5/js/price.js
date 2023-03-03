@@ -42,10 +42,10 @@ image.src = imageLocation;
 const basePrice = rolls[chosenRoll].basePrice;
 
 const glazingPrices = {
-	"Keep original" : 0.0,
-	"Sugar milk" : 0.0,
-	"Vanilla milk" : 0.50,
-	"Double chocolate" : 1.50
+	"Keep Original" : 0.0,
+	"Sugar Milk" : 0.0,
+	"Vanilla Milk" : 0.50,
+	"Double Chocolate" : 1.50
 };
 
 const packPrices = {
