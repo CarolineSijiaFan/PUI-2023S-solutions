@@ -114,7 +114,8 @@ const cart = new Set();
 function addProduct(type,glazing,size,price){
     const product = new Roll(type,glazing,size,price);
     cart.add(product);
-    console.log(cart);
+    saveToLocalStorage();
+    console.log(localStorage.getItem('storedCarts'));
     return product
 }
 
@@ -122,3 +123,11 @@ const addInCart = document.querySelector(".box2");
 addInCart.addEventListener('click', () => {
     addProduct(chosenRoll,glazingOption,packOption,totalPrice);
 });
+
+function saveToLocalStorage() {
+    const cartArray = Array.from(cart);
+
+    const cartArrayString = JSON.stringify(cartArray);
+
+    localStorage.setItem('storedCarts', cartArrayString);
+  }

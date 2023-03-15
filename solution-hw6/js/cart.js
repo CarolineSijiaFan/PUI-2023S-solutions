@@ -90,3 +90,9 @@ addNewRoll("Original","Sugar Milk","1",2.49);
 addNewRoll("Walnut","Vanilla Milk","12",3.49);
 addNewRoll("Raisin","Sugar Milk","3",2.99);
 addNewRoll("Apple","Keep Original","3",3.49);
+
+function retrieveFromLocalStorage() {
+    const cartArrayString = localStorage.getItem('storedCarts');
+    const cartArray = JSON.parse(cartArrayString);
+    console.log(cartArray);
+  }
