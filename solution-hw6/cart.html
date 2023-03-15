@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Cart</title>
+        <link rel="stylesheet" href="css/gallery_style.css">
+        <link rel="stylesheet" href="css/cart_style.css">
+        <script defer src="js/cart.js"></script>
+    </head>
+
+    <body>
+        <div class="headPart">
+            <div class="logo">
+              <a href="index.html">
+                  <img src="logo/logo-01.svg" >
+              </a>
+            </div>
+      
+            <div class="besides">
+              <div id="link_line1">
+      
+                <a id="headLink" href="index.html"> PRODUCTS </a>
+      
+                <a id="headLink" href="cart.html"> CART </a>
+      
+              </div>
+            
+              <div id="line">
+                <hr>
+              </div>
+      
+      
+              <div id="title_cart"> Shopping Cart</div>
+            </div>
+        </div>
+        
+        <div class="cartMain">
+            <div id="leftMain">
+            </div>
+            
+            <div class="rightMain">
+                <div id="rollList">
+                    <template id="Item-template">
+                        <div class="row">
+                            <div class="sampleElement" id = "imageColumn">
+                                <img class="cartImage" src="products/original-cinnamon-roll.jpg">
+                                <div class="remove">Remove</div>
+                            </div>
+
+                            <div class="sampleElement" id="describeText">
+                                <div class="cartText" id="rollType">Original Cinnamon Roll</div>
+                                <div class="cartText" id="glazing">Glazing: Keep Orignial</div>
+                                <div class="cartText" id="packSize">Pack Size: 1</div>
+                            </div>
+
+                            <div class="sampleElement" id="priceText">
+                                <div class="price">$2.49</div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+
+                <hr class="cartHR">
+
+                <div class="row">
+                    <div class="sampleElement" id = "imageColumn">
+                        
+                    </div>
+
+                    <div class="sampleElement" id="describeText">
+                        <div class="cartText" id="cartEnd">Total</div>
+                    </div>
+
+                    <div class="sampleElement" id="priceText">
+                        <div class="cartText" id="cartEndPrice">$29.94</div>
+                    </div>
+                </div>
+
+                <div class="row" id="checkOUT">
+                    <a class="confirm" href="index.html"> Checkout </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
