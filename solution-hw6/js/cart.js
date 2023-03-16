@@ -9,7 +9,7 @@ const packPrices = {
 	"1" : 1, "3" : 3, "6" : 5, "12" : 10
 };
 
-const cart = new Set();
+const cart = new Array();
 
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
@@ -32,7 +32,7 @@ function calPrice(rollGlazing, packSize, basePrice){
 
 function addNewRoll(rollType, rollGlazing, packSize, basePrice){
     const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
-    cart.add(roll);
+    cart.push(roll);
     createElement(roll);
     updateCartPrice(cart);
 }
@@ -82,17 +82,34 @@ function updateCartPrice(cart){
 
 function deleteRoll(roll) {
     roll.element.remove();
-    cart.delete(roll);
+    const index = cart.indexOf(roll);
+    cart.splice(index,1);
+    undateStorage(index);
     updateCartPrice(cart);
 }
 
-addNewRoll("Original","Sugar Milk","1",2.49);
-addNewRoll("Walnut","Vanilla Milk","12",3.49);
-addNewRoll("Raisin","Sugar Milk","3",2.99);
-addNewRoll("Apple","Keep Original","3",3.49);
+function undateStorage(index){
+    if (localStorage.getItem('storedCarts') === null){;}
+    else{
+        const cartArrayString = localStorage.getItem('storedCarts');
+        const cartArray = JSON.parse(cartArrayString);
+        cartArray.splice(index,1);
+        cartArrayStringNew = JSON.stringify(cartArray);
+        localStorage.setItem('storedCarts', cartArrayStringNew);
+        console.log(localStorage.getItem('storedCarts'));
+    }
+}
 
-function retrieveFromLocalStorage() {
-    const cartArrayString = localStorage.getItem('storedCarts');
-    const cartArray = JSON.parse(cartArrayString);
-    console.log(cartArray);
-  }
+function retrieveFromLocalStorage(){
+    if (localStorage.getItem('storedCarts') === null){;}
+    else{
+        const cartArrayString = localStorage.getItem('storedCarts');
+        const cartArray = JSON.parse(cartArrayString);
+        console.log(cartArray);
+        for (const item of cartArray){
+            addNewRoll(item.type, item.glazing, item.size, Number(item.basePrice));
+        }
+    }
+}
+
+retrieveFromLocalStorage();

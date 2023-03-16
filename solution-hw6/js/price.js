@@ -52,7 +52,7 @@ const packPrices = {
 	"1" : 1, "3" : 3, "6" : 5, "12" : 10
 };
 
-let glazingOption = "Keep original";
+let glazingOption = "Keep Original";
 let packOption = 1;
 
 let totalPrice = basePrice;
@@ -114,20 +114,26 @@ const cart = new Set();
 function addProduct(type,glazing,size,price){
     const product = new Roll(type,glazing,size,price);
     cart.add(product);
-    saveToLocalStorage();
+    saveToLocalStorage(product);
     console.log(localStorage.getItem('storedCarts'));
     return product
 }
 
 const addInCart = document.querySelector(".box2");
 addInCart.addEventListener('click', () => {
-    addProduct(chosenRoll,glazingOption,packOption,totalPrice);
+    addProduct(chosenRoll,glazingOption,packOption,basePrice);
 });
 
-function saveToLocalStorage() {
+function saveToLocalStorage(product) {
     const cartArray = Array.from(cart);
-
-    const cartArrayString = JSON.stringify(cartArray);
-
-    localStorage.setItem('storedCarts', cartArrayString);
+    let cartArrayString = JSON.stringify(cartArray);
+    if (localStorage.getItem('storedCarts') === null){
+        localStorage.setItem('storedCarts', cartArrayString);}
+    
+    else{
+        const curCart = JSON.parse(localStorage.getItem('storedCarts'));
+        curCart.push(product);
+        cartArrayString = JSON.stringify(curCart);
+        localStorage.setItem('storedCarts', cartArrayString);
+    }
   }
