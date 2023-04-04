@@ -1,0 +1,12 @@
+.header{
+    height:50px;
+    background-color:blue; 
+    display:flex;
+}
+
+.header_name{
+    margin-left:10px;
+    color:white;
+    background-color:#CAA5A5;
+    font-size:;
+}
