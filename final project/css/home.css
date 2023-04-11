@@ -2,6 +2,7 @@ body{
     min-width: 800px;
     margin:0px;
     background-color:#FFFDFA;
+    color:#4b4b4b;
 }
 
 .header{
@@ -32,7 +33,6 @@ body{
 
 .header_link{
     font-size:10px;
-    color:#4b4b4b;
     font-family:Chonburi;
 }
 
@@ -45,6 +45,12 @@ body{
 .introduction{
     margin-top:18%;
     font-size:40px;
+    font-family:Chonburi;
+    color:#747474;
+}
+
+.connection{
+    font-size:25px;
     font-family:Chonburi;
     color:#747474;
 }
@@ -73,14 +79,58 @@ body{
 
 .tagArea{
     display:flex;
-    width:350px;
+    width:380px;
     flex-wrap: wrap;
     gap: 10px 20px;
 }
 
 .tagBox{
+    margin-top:3px;
+    margin-bottom:3px;
     background-color:pink;
     border-radius: 15px;
     font-family:Chonburi;
     font-size:15px;
+}
+
+.projectType1{
+    height:400px;
+    background-color:#CAA5A5;
+    display:flex;
+    color:#FFFDFA;
+}
+
+.projectType2{
+    height:400px;
+    display:flex;
+}
+
+.detailArea1{
+    width:50%;
+}
+
+.detailArea2{
+    width:50%;
+}
+
+.texts{
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:70px;
+}
+
+.projectTitle{
+    font-family:Chonburi;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.projectDes{
+    font-size:20px;
+    font-family:Chonburi;
+}
+
+.projectImage{
+    margin-left:20%;
+    margin-right:20%;
 }
