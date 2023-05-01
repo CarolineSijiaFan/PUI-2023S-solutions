@@ -4,38 +4,43 @@
   <head>
     <title>Home Page</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/navigationBar.css">
+    <link rel="stylesheet" href="css/bottomBar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chonburi">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Uncial+Antiqua">
   </head>
 
   <body>
 
-    <div class="header">
-        <div class="header_name">
-          &nbsp;&nbsp;Sijia Fan&nbsp;&nbsp;
+    <ul class="header">
+      <div class="header_name">
+          <li><a href="home.html" id="naviName">&nbsp;&nbsp;Sijia Fan&nbsp;&nbsp;</a></li>
+      </div>
+      <div class="others">
+        <div class="header_link">
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">UI/UX</a>
+              <div class="dropdown-content">
+                <a href="BetterNotes.html">BetterNotes</a>
+                <a href="#">Pelican App</a>
+                <a href="#">Community Shop</a>
+              </div>
         </div>
-        <div class="others">
-          <div class="header_link">
-            UI/UX
-          </div>
-          <div class="header_link">
-            Projects
-          </div>
-          <div class="header_link">
-            Design
-          </div>
-          <div class="header_link">
-            About Me
-          </div>
+        <div class="header_link">
+          <li ><a href="home.html" class="dropbtn">Design</a></li>
         </div>
-    </div>
+        <div class="header_link">
+          <li ><a href="home.html" class="dropbtn">About Me</a></li>
+        </div>
+      </div>
+  </ul>
 
     <div class="cover">
       <div class="cover_left">
         <div class="introduction">
           <p>Hi! I'm Sijia.</p>
-          <p>I DESIGN ...</p>
-          <p>From ONE to INFINITY.</p>
+          <p id="secondSentence">I DESIGN ...</p>
+          <p id="lastSentence">From ONE to INFINITY.</p>
         </div>
 
         <div class="tags">
@@ -65,13 +70,50 @@
         <div class="detailArea1">
           <div class="texts">
             <div class="projectTitle">
-              Project Title
+              BetterNotes
             </div>
             <div class="projectDes">
-              sample text sample text sample text sample text sample text
-              sample text sample text sample text sample text sample text
-              sample text sample text sample text sample text sample text
-              sample text sample text sample text sample text sample text
+              All-in-one note-taking application. 
+              Improve the note-taking experience while also
+              teach students to take better notes.
+            </div>
+          </div>
+        </div>
+        <div class="detailArea2">
+          <div class="projectImage">
+            <a href="BetterNotes.html"><img class="sampleImg" src="images/BetterNotes cover.png"></div></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="projectType2">
+        <div class="detailArea2">
+          <div class="projectImage">
+            sample image
+          </div>
+        </div>
+        <div class="detailArea1">
+          <div class="texts">
+            <div class="projectTitle">
+              Pelican App
+            </div>
+            <div class="projectDes">
+              Mobile service application designed for Pelican watersports 
+              aiming to solve the first penguin problem.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projectType1">
+        <div class="detailArea1">
+          <div class="texts">
+            <div class="projectTitle" id="CommunityShop">
+              Community Shop
+            </div>
+            <div class="projectDes">
+              Mobile service application designed for Giant Eagle 
+              connecting local community elderly people with students.
             </div>
           </div>
         </div>
@@ -91,40 +133,31 @@
         <div class="detailArea1">
           <div class="texts">
             <div class="projectTitle">
-              Project Title
+              ScottyCon Booklet
             </div>
             <div class="projectDes">
-              sample text sample text sample text sample text sample text
-              sample text sample text sample text sample text sample text
-              sample text sample text sample text sample text sample text
-              sample text sample text sample text sample text sample text
+              Design the program booklet for ScottyCon 2023, 
+              including the map and the program schedule.
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="projectType1">
-        <div class="detailArea1">
-          <div class="texts">
-            <div class="projectTitle">
-              Project Title
-            </div>
-            <div class="projectDes">
-              sample text sample text sample text sample text sample text
-              sample text sample text sample text sample text sample text
-              sample text sample text sample text sample text sample text
-              sample text sample text sample text sample text sample text
-            </div>
-          </div>
-        </div>
-        <div class="detailArea2">
-          <div class="projectImage">
-            sample image
           </div>
         </div>
       </div>
     </div>
 
+    <div id = "buttomBG">
+      <span>
+        <div class="bottom">
+          <div id = "bp1">
+            <div id="bottomName"> Sijia Fan </div>
+            <div id = "back2top"><a href="#top">Back to top</a></div>
+          </div>
+          <div id="bottomInfo">
+            <div class = "bottomInfoLine"><a href="mailto:sijiaf@andrew.cmu.edu"> email:  sijiaf@andrew.cmu.edu </a> </div>
+            <div class = "bottomInfoLine"> mobile:  (412)773-2760  </div>
+            <div class = "bottomInfoLine"> location: 4500 Centre Ave., Pittsburgh, 15231</div>
+          </div>
+      </div>
+    </div>
   </body>
 
 

@@ -2,39 +2,12 @@ body{
     min-width: 800px;
     margin:0px;
     background-color:#FFFDFA;
-    color:#4b4b4b;
+    color:#747474;
 }
 
-.header{
-    background-color:white;
-    height:42px;
-    margin:0px;
-    display:flex;
-    align-items: center;
-    justify-content:space-between;
-}
-
-.header_name{
-    height:100%;
-    color:#FFFDFA;
-    background-color:#CAA5A5;
-    font-size:30px;
-    margin:0px;
-    text-align: center;
-    font-family:Uncial Antiqua;
-}
-
-.others{
-    margin-right:20px;
-    width:30%;
-    display:flex;
-    justify-content:space-between;
-}
-
-.header_link{
-    font-size:10px;
-    font-family:Chonburi;
-}
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
 
 .cover{
     height:650px;
@@ -87,10 +60,11 @@ body{
 .tagBox{
     margin-top:3px;
     margin-bottom:3px;
-    background-color:pink;
     border-radius: 15px;
     font-family:Chonburi;
     font-size:15px;
+    border-style: solid;
+    border-color: #CAA5A5;
 }
 
 .projectType1{
@@ -98,11 +72,15 @@ body{
     background-color:#CAA5A5;
     display:flex;
     color:#FFFDFA;
+    justify-content:center;
+    align-items:center;
 }
 
 .projectType2{
     height:400px;
     display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .detailArea1{
@@ -116,13 +94,12 @@ body{
 .texts{
     margin-left:20%;
     margin-right:20%;
-    margin-top:70px;
 }
 
 .projectTitle{
     font-family:Chonburi;
     font-size:40px;
-    margin-bottom:10px;
+    margin-bottom:18px;
 }
 
 .projectDes{
@@ -133,4 +110,19 @@ body{
 .projectImage{
     margin-left:20%;
     margin-right:20%;
+}
+
+#lastSentence{
+    margin-bottom:0px;
+}
+
+.sampleImg{
+    height: auto;
+    max-width: 450px;
+    align-self:center;
+    filter: grayscale(100%);
+}
+
+.sampleImg:hover{
+    filter: grayscale(0);
 }
