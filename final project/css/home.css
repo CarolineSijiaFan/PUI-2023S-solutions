@@ -120,9 +120,41 @@ a, a:visited, a:hover, a:active {
     height: auto;
     max-width: 450px;
     align-self:center;
-    filter: grayscale(100%);
+    filter: grayscale(70%);
 }
 
 .sampleImg:hover{
     filter: grayscale(0);
 }
+
+.titleAni{
+    margin-top:0px;
+    margin-bottom:0px;
+    text-decoration:none
+}
+
+.titleAni:hover{
+    color:#CAA5A5;
+    background-color:#FFFDFA;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+
+  .titleAni2{
+    margin-top:0px;
+    margin-bottom:0px;
+    text-decoration:none
+}
+
+.titleAni2:hover{
+    color:#FFFDFA;
+    background-color:#CAA5A5;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }

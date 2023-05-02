@@ -1,0 +1,105 @@
+body{
+    min-width: 800px;
+    margin:0px;
+    background-color:#FFFDFA;
+    color:#747474;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+
+.cover{
+    height:650px;
+    display:flex;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+#coverImage{
+    margin-top:30px;
+    height: auto;
+    max-height: 550px;
+    align-self:center;
+}
+
+.coverText{
+    margin-top:90px;
+    margin-left:3%;
+    font-family:Chonburi;
+}
+
+#mainTitle{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+#coverDes{
+    font-size:23px;
+    margin-top:40px;
+}
+
+#coverDetails{
+    font-size:18px;
+}
+
+.bodyType1{
+    height:300px;
+    background-color:#f7f2ef;
+    display:flex;
+    align-items: center;
+    flex-grow:1;
+}
+
+.bodyType2{
+    height:400px;
+    display:flex;
+    align-items: center;
+    flex-grow:1;
+}
+
+.subTitle{
+    font-family:Chonburi;
+    font-size: 30px;
+}
+
+#subTitleType1{
+    width:50%;
+    text-align: center;
+}
+
+#subTitleType2{
+    width:30%;
+    text-align: center;
+}
+
+.details{
+    width:40%;
+    justify-content:center;
+}
+
+#text{
+    font-size:18px;
+    margin-bottom:10px;
+    margin-top:10px;
+    font-family:Poppins;
+}
+
+.important{
+    font-weight:1000;
+    color:black;
+}
+
+.userJourneyImage{
+    max-width:940px;
+    height:auto
+}
+
+.empty{
+    height:100px;
+}
+
+#PrototypePreview{
+    margin-left:10%;
+    margin-bottom:0px;
+}
