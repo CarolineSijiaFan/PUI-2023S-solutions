@@ -158,3 +158,53 @@ a, a:visited, a:hover, a:active {
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
   }
+
+  .empty{
+    height:25px;
+    background-color:#CAA5A5
+}
+
+#finalEmpty{
+    height:50px;
+    background-color:#FFFDFA
+}
+
+@media only screen and (max-width: 1100px){
+    .cover{
+        display:block;
+        height:auto;
+    }
+
+    .cover_left{
+        width:90%;}
+    
+
+    .projectType1{
+        display:block;
+        height:auto;
+    }
+    
+    .detailArea1{
+        padding-top:30px;
+        padding-bottom:20px;
+
+        width:90%;
+    }
+
+
+    .projectType2{
+        display:block;
+        height:auto;
+    }
+    
+    #detailArea2{
+        padding-top:10px;
+        padding-bottom:30px;
+        width:90%;
+    }
+
+    .sampleImg{
+        margin-left: 35%;
+        margin-right: auto;
+    }
+}

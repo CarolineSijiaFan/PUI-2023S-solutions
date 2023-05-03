@@ -154,7 +154,7 @@ ul.ani:hover li.ani:hover {
 }
 
 img.aniImg {
-  filter:blur(10px);
+  filter:blur(1px);
   transition:filter 0.7s;
 }
 li.ani:hover img {
@@ -209,11 +209,27 @@ li.ani:hover img {
 }
 
 .detail1{
+  flex-direction: column;
   height:22.5vh;
-  background-color:yellow;
-  text-align: center;
+  display:flex;
+  font-family:Poppins;
+  font-size:20px;
+  width:60%;
+  justify-content:center;
 }
 
-#Img1:hover .subtitle{
-  opacity:0;
+.des{
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.desTitle{
+  margin-top:0px;
+  margin-bottom:0px;
+  font-family:Chonburi;
+  font-size:24px;
+}
+
+.empty{
+  height:100px;
 }
